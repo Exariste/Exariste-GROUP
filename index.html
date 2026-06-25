@@ -554,221 +554,83 @@ section { padding: 80px 0; }
   letter-spacing: 0.05em;
 }
 
-<style>
-footer{background:#001B44;color:rgba(255,255,255,.8);}
-.footer-top{padding:56px 0 40px;border-bottom:1px solid rgba(255,255,255,.08);}
-.footer-container{max-width:1280px;margin:auto;padding:0 24px;}
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.8fr 1.1fr 1fr 1.4fr;
-    gap:40px;
+/* ─── FOOTER ─── */
+footer {
+  background: #000e26;
+  color: rgba(255,255,255,0.75);
 }
-
-.footer-logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:16px;
+.footer-top {
+  padding: 60px 0 40px;
+  border-bottom: 1px solid rgba(212,160,23,0.12);
 }
-
-.footer-logo img{
-    width:52px;
-    height:52px;
-    border-radius:50%;
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 48px;
 }
-
-.footer-brand-name{
-    font-size:1.1rem;
-    font-weight:900;
-    color:#fff;
+.footer-brand .logo-name { color: var(--white); font-size: 1.3rem; }
+.footer-brand .logo-name span { color: var(--gold); }
+.footer-desc {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+  margin: 16px 0 24px;
 }
-
-.footer-brand-sub{
-    font-size:.6rem;
-    color:#D4A017;
-    letter-spacing:2px;
+.footer-socials { display: flex; gap: 10px; }
+.social-btn {
+  width: 36px; height: 36px;
+  border: 1px solid rgba(212,160,23,0.25);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.8rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: border-color 0.2s, color 0.2s;
 }
+.social-btn:hover { border-color: var(--gold); color: var(--gold); }
 
-.footer-desc{
-    font-size:.85rem;
-    line-height:1.8;
-    color:rgba(255,255,255,.6);
-    margin:20px 0;
+.footer-col h5 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
 }
-
-.footer-socials{
-    display:flex;
-    gap:10px;
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 8px; }
+.footer-links a {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.2s;
 }
-
-.social-btn{
-    width:42px;
-    height:42px;
-    border:1px solid rgba(255,255,255,.2);
-    border-radius:8px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#fff;
-    text-decoration:none;
+.footer-links a:hover { color: var(--gold-light); }
+.footer-contact-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
 }
+.footer-contact-item svg { width: 14px; height: 14px; fill: var(--gold); flex-shrink: 0; margin-top: 2px; }
+.footer-contact-item a { color: rgba(255,255,255,0.55); text-decoration: none; }
+.footer-contact-item a:hover { color: var(--gold-light); }
 
-.footer-col h5{
-    color:#D4A017;
-    margin-bottom:20px;
-    border-bottom:1px solid rgba(212,160,23,.2);
-    padding-bottom:10px;
-    letter-spacing:1px;
+.footer-bottom {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.35);
+  flex-wrap: wrap;
+  gap: 12px;
 }
-
-.footer-links{
-    list-style:none;
-}
-
-.footer-links li{
-    margin-bottom:12px;
-}
-
-.footer-links a{
-    color:rgba(255,255,255,.6);
-    text-decoration:none;
-}
-
-.footer-contact-item{
-    margin-bottom:15px;
-    color:rgba(255,255,255,.6);
-}
-
-.footer-bottom{
-    padding:20px 24px;
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.footer-bottom-links{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.footer-bottom-links a{
-    color:rgba(255,255,255,.6);
-    text-decoration:none;
-}
-
-@media(max-width:768px){
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
-}
-</style>
-
-<footer>
-
-    <div class="footer-top">
-        <div class="footer-container footer-grid">
-
-            <!-- Company Info -->
-            <div>
-                <div class="footer-logo">
-                    <img src="logo.png" alt="Logo">
-
-                    <div>
-                        <div class="footer-brand-name">
-                            EXARISTE GROUP
-                        </div>
-
-                        <div class="footer-brand-sub">
-                            EXCELLENCE IN EVERY HORIZON
-                        </div>
-                    </div>
-                </div>
-
-                <p class="footer-desc">
-                    A diversified business conglomerate dedicated to creating sustainable value across multiple industries through innovation, integrity, and excellence.
-                </p>
-
-                <div class="footer-socials">
-                    <a href="#" class="social-btn">f</a>
-                    <a href="#" class="social-btn">in</a>
-                    <a href="#" class="social-btn">X</a>
-                    <a href="#" class="social-btn">▶</a>
-                </div>
-            </div>
-
-            <!-- Business Verticals -->
-            <div class="footer-col">
-                <h5>BUSINESS VERTICAL'S</h5>
-
-                <ul class="footer-links">
-                    <li><a href="#">Agriculture</a></li>
-                    <li><a href="#">Feed & Nutrition</a></li>
-                    <li><a href="#">Food & Beverage</a></li>
-                    <li><a href="#">Fashion & Personal Care</a></li>
-                    <li><a href="#">Home Care</a></li>
-                    <li><a href="#">Animal Care</a></li>
-                    <li><a href="#">Distribution</a></li>
-                    <li><a href="#">Digital Services</a></li>
-                    <li><a href="#">Education</a></li>
-                </ul>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="footer-col">
-                <h5>QUICK LINKS</h5>
-
-                <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Brands</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">News & Media</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact -->
-            <div class="footer-col">
-                <h5>CONTACT</h5>
-
-                <div class="footer-contact-item">
-                    📍 Panti, Kushtia, Bangladesh
-                </div>
-
-                <div class="footer-contact-item">
-                    ✉ info@exariste.com
-                </div>
-
-                <div class="footer-contact-item">
-                    📞 +880 1713-366224
-                </div>
-
-                <div class="footer-contact-item">
-                    🟢 +880 1713-366224
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="footer-container footer-bottom">
-
-        <div>
-            © 2025 EXARISTE GROUP. All rights reserved.
-        </div>
-
-        <div class="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Developed by Zenixa Digital Lab</a>
-        </div>
-
-    </div>
-
-</footer>
+.footer-bottom a { color: var(--gold); text-decoration: none; }
 
 /* ─── SCROLL REVEAL ─── */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
